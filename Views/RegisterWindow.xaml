@@ -1,0 +1,20 @@
+<Window x:Class="JuegoDeMemoria.Views.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Crear Cuenta"
+        Height="380"
+        Width="420"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <StackPanel Background="#FF759359">
+            <TextBlock Text="Registro de Usuario" FontSize="22" FontWeight="Bold" Margin="0 0 0 10" FontFamily="Stencil"/>
+            <TextBlock Text="Usuario:" Margin="5 0 0 0" FontFamily="Cascadia Mono"/>
+            <TextBox x:Name="txtNuevoUsuario" Height="28" Margin="5 5 0 10" Width="300" HorizontalAlignment="Left"/>
+            <TextBlock Text="Contraseña:" Margin="5 0 0 0" FontFamily="Cascadia Mono"/>
+            <PasswordBox x:Name="pwdNuevaContrasena" Height="28" Margin="5 5 0 10" Width="300" HorizontalAlignment="Left"/>
+            <TextBlock Text="Confirmar Contraseña:" Margin="5 0 0 0" FontFamily="Cascadia Mono"/>
+            <PasswordBox x:Name="pwdConfirmar" Height="28" Margin="5 5 0 10" Width="300" HorizontalAlignment="Left"/>
+            <Button x:Name="btnCrearCuenta" Content="Crear Cuenta" Height="36" Width="150" FontFamily="Sans Serif Collection" Click="btnCrearCuenta_Click" Background="#FF3F6C32"/>
+        </StackPanel>
+    </Grid>
+</Window>

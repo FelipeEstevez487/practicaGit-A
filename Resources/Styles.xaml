@@ -1,0 +1,33 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Color palette -->
+    <Color x:Key="PrimaryColor">#FF1565C0</Color>   <!-- azul -->
+    <Color x:Key="PrimaryDark">#FF0D47A1</Color>
+    <Color x:Key="AccentColor">#FFFFC107</Color>    <!-- amarillo -->
+    <Color x:Key="BackgroundColor">#FFF3F6FB</Color>
+    <Color x:Key="CardBackColor">#FFFFFFFF</Color>
+
+    <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource PrimaryColor}" />
+    <SolidColorBrush x:Key="PrimaryDarkBrush" Color="{StaticResource PrimaryDark}" />
+    <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="BackgroundBrush" Color="{StaticResource BackgroundColor}" />
+    <SolidColorBrush x:Key="CardBackBrush" Color="{StaticResource CardBackColor}" />
+
+    <Style TargetType="Window">
+        <Setter Property="Background" Value="{StaticResource BackgroundBrush}" />
+        <Setter Property="FontFamily" Value="Segoe UI" />
+    </Style>
+
+    <Style TargetType="Button">
+        <Setter Property="Background" Value="{StaticResource PrimaryBrush}" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="Padding" Value="8,4" />
+        <Setter Property="Margin" Value="6" />
+    </Style>
+
+    <Style TargetType="Label">
+        <Setter Property="Foreground" Value="{StaticResource PrimaryDarkBrush}" />
+    </Style>
+
+</ResourceDictionary>
